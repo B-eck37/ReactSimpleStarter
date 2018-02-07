@@ -22,11 +22,12 @@ class SearchBar extends Component {
 
 
     render() {
+        const {term} = this.state
         return (
             <div className='search-bar'>
                 <input 
                 placeholder='Type here'
-                value={this.state.term}
+                value={term}
                 onChange={e => this.onInputChange(e.target.value)}/><br/>
             
             </div>
